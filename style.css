@@ -1,0 +1,531 @@
+/* Remove Default Spacing */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #dcefe4;
+}
+
+
+/* Logo */
+
+.logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo img{
+
+    width: 50px;
+
+    height: 50px;
+}
+
+.logo h1{
+
+    color: #2f5d50;
+
+    font-size: 32px;
+}
+
+
+.nav-links{
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+
+.nav-links a{
+
+    text-decoration: none;
+
+    color: #2f5d50;
+
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+
+    color: #5e9c89;
+}
+
+
+/* 2.Hero Section */
+
+.hero{
+
+    height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.5)
+    ),
+
+    url('images/hero1.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+/* Hero Content */
+
+.hero-content h2{
+
+    font-size: 72px;
+
+    color: #2f5d50;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+}
+
+.hero-content p{
+
+    font-size: 24px;
+
+    color: #444;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    line-height: 1.8;
+}
+/* Button Styling */
+
+button{
+    margin-top: 30px;
+
+    padding: 16px 28px;
+
+    border: none;
+
+    background-color: #2f5d50;
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+button:hover{
+
+    background-color: #5e9c89;
+}
+
+/* 3.Wellness Tips Section */
+
+.tips{
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background-color: #f4f7f5;
+}
+
+.tip-card img{
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.tips h2{
+
+    font-size: 40px;
+
+    color: #2f5d50;
+
+    margin-bottom: 50px;
+}
+
+/* Tips Cards Container */
+
+.tips-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* Individual Card */
+
+.tip-card{
+
+    background-color: white;
+
+    padding: 30px;
+
+    width: 300px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+   transition: all 0.3s ease;
+}
+
+/* Card Hover Effect */
+
+.tip-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.tip-card h3{
+
+    color: #2f5d50;
+
+    margin-bottom: 15px;
+}
+
+.tip-card p{
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+/* Meditation Section */
+
+.meditation{
+
+    text-align: center;
+
+    padding: 80px 50px;
+
+    background-color: #dcefe4;
+}
+
+.meditation img{
+
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 15px;
+
+    margin: 20px 0;
+}
+
+.meditation h2{
+
+    font-size: 40px;
+
+    color: #2f5d50;
+
+    margin-bottom: 20px;
+}
+
+.meditation p{
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #444;
+}
+
+/* Mood Tracker Section */
+
+.mood{
+
+    padding: 80px 50px;
+
+    text-align: center;
+}
+
+.mood h2{
+
+    font-size: 40px;
+
+    color: #2f5d50;
+
+    margin-bottom: 40px;
+}
+
+/* Mood Cards Container */
+
+.mood-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+/* Mood Card */
+
+.mood-card{
+
+    width: 180px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    font-size: 40px;
+
+    transition: 0.3s;
+}
+
+.mood-card h3{
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #2f5d50;
+}
+
+.mood-card:hover{
+
+    transform: scale(1.05);
+}
+
+
+/* Testimonials Section */
+
+.testimonials{
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background-color: #f4f7f5;
+}
+
+.testimonials h2{
+
+    font-size: 40px;
+
+    color: #2f5d50;
+
+    margin-bottom: 40px;
+}
+
+.testimonial-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.testimonial-card{
+
+    width: 320px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: all 0.3s ease;
+}
+
+.testimonial-card p{
+
+    font-style: italic;
+
+    margin-bottom: 15px;
+
+    color: #555;
+}
+
+.testimonial-card h4{
+
+    color: #2f5d50;
+}
+
+.testimonial-card img{
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+.testimonial-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Contact Section */
+
+.contact{
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background-color: #dcefe4;
+}
+.contact-text{
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #555;
+
+    line-height: 1.8;
+}
+
+.contact-info{
+
+    margin-bottom: 30px;
+}
+
+.contact-info p{
+
+    margin: 10px 0;
+
+    font-size: 18px;
+
+    color: #2f5d50;
+}
+
+.contact h2{
+
+    font-size: 40px;
+
+    color: #2f5d50;
+
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+
+.contact-form{
+
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.contact-form textarea{
+
+    height: 120px;
+
+    resize: none;
+}
+
+
+/* Footer */
+
+footer{
+
+    background-color: #2f5d50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p{
+
+    margin: 5px 0;
+}
